@@ -1,0 +1,95 @@
+.main-delivery{
+    font-family: 'Helvetica Neue Cyr Medium';
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.main-delivery_list-iink{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+.main-delivery_list-iink--color{
+    width: 275px;
+    padding: 12px 0 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f13a5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.section-delivery_adress-list-item {
+    margin-bottom: 15px;
+}
+.section-delivery_adress-list-item:nth-child(1) {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px
+}
+.section-delivery_adress-list-item-h2{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1e1e1e;
+}
+.section-delivery_adress-list-item-h3,
+.section-delivery_adress-list-item-link{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #777777;
+    margin-left: 45px;
+}
+.main-delivery_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.section-delivery_map-h1{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #1e1e1e;
+    margin: 60px 0 30px;
+}
+.section-delivery_map-iframe{
+    width: 100%;
+    border-radius: 25px;
+}
+.section-delivery_adress-svg{
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+}
+.section-delivery_adress-list-item-h2,
+.section-delivery_adress-list-item-h3,
+.section-delivery_adress-list-item-link{
+    text-decoration: none;
+}
+.section-delivery_adress-list{
+    list-style-type: none;
+}
+.container-adress--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.section-delivery_adress_svg{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
