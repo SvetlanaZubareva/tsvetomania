@@ -74,6 +74,8 @@
     margin-top: 45px;
     margin-bottom: 45px;
     display: flex;
+}.section-delivery_adress-list-item-h2{
+    margin: 0;
 }
 .section-delivery_adress-list-item-h2,
 .section-delivery_adress-list-item-h3,
