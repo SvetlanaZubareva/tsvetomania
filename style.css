@@ -55,6 +55,7 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    padding: 0;
 }
 .section-delivery_map-h1{
     font-family: 'Helvetica Neue Cyr Medium';
