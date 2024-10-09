@@ -105,3 +105,61 @@
 .section-delivery_adress-list-item-h3--margin{
     margin: 0;
 }
+.section-delivery_map-list-option{
+    list-style-type: none;
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.section-delivery_map-list-option-item{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #777777;
+}
+.section-delivery_map-list-option-item--color{
+    width: 194px;
+    padding: 12px 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #f13a5f;
+    color: #fff;
+}
+.section-personal_list{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 52px;
+    margin-top: 45px;
+}
+.section-personal_h2{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.section-personal_p{
+    font-family: 'Helvetica Neue Cyr Medium';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #f13a5f;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8px;
+}
+.section-personal_img{
+    width: 100%;
+    height: 252px;
+}
