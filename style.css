@@ -501,7 +501,8 @@ p{
     display: flex;
     background-color: #f9f9f9;
     border-radius: 25px;
-    padding: 33px 40px 33px;
+    padding: 33px 0 33px;
+    width: 100%;
     box-sizing: border-box;
 }
 .section-compony-offer_list-item h3{
@@ -524,7 +525,7 @@ p{
     margin-bottom: 60px;
 }
 .section-compony-advantage_list-item-list{
-    width: 550px;
+    width: 90%;
 }
 .section-compony-advantage_list-item-list-item{
     color: #1e1e1e;
@@ -706,7 +707,7 @@ p{
     margin-bottom: 45px;
 }
 .section-compony-offer_list{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
