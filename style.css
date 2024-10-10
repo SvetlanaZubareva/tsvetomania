@@ -477,7 +477,7 @@ p{
     font-family: 'Helvetica Neue Cyr Medium';
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 500px;
 }
 .section-compony-offer-h3{
     color: #1e1e1e;
@@ -504,6 +504,9 @@ p{
     padding: 33px 40px 33px;
     box-sizing: border-box;
 }
+.section-compony-offer_list-item h3{
+    margin: 0 auto;
+}
 .section-compony-advantage{
     margin-bottom: 89px;
 }
@@ -519,6 +522,9 @@ p{
     width: 1000px;
     margin: 0 auto;
     margin-bottom: 60px;
+}
+.section-compony-advantage_list-item-list{
+    width: 550px;
 }
 .section-compony-advantage_list-item-list-item{
     color: #1e1e1e;
