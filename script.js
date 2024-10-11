@@ -1,9 +1,11 @@
-const swiperContainer = document.querySelector('.swiper-compony')
+const swiperContainer = document.querySelector('.swiper-compony');
+const swiperContainer2 = document.querySelector('.slider__thumbs .swiper-container');
 
 document.addEventListener(
     'DOMContentLoaded',
     () => {
         slider();
+        slider1();
     },
     true
 )
@@ -33,3 +35,4 @@ const slider = () => {
     },
   });
 }
+
