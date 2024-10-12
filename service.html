@@ -7,6 +7,7 @@
     <title>Карта лояльности</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
 <body>
     <main class="main-delivery">
@@ -161,42 +162,71 @@
                 Наши работы
             </h3>
             <section class="section-service-slider">
+                <div id="before-after-slider">
+                    <div id="before-image">
+                    <div id="before-image--position">
+                        <img src="./img/png/10.png" alt="before"/>
+                        <span>
+                            До
+                        </span>
+                    </div>
+                    </div>
+                
+                    <div id="after-image">
+                    <div id="after-image--position">
+                        <img src="./img/png/Picture.png" alt="After"/>
+                        <span>
+                            После
+                        </span>
+                    </div>
+                    </div>
+                
+                    <div id="resizer">
+                    <span>
+                        <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0104 0L43.8144 29.0104L21.8591 57.8695L0.0551889 28.8591L22.0104 0Z" fill="#F13A5F"/>
+                        </svg>
+                    </span>
+                </div>
+                <h2 class="swiper-slide-service_h2">
+                    Название проекта
+                </h2>
+                <p class="swiper-slide-service_p">
+                    проекта Описание проекта описание проекта  описание проекта  описание проекта
+                    описание проекта  описание проекта  описание проекта  описание проекта  описание проекта 
+                    описание проекта  описание проекта  описание проекта  описание проекта  описание проекта 
+                        описание проекта  описание проекта  описание проекта  описание проекта  описание проекта 
+                        описание проекта  описание проекта  описание проекта  описание проекта  описание проекта 
+                        описание проекта 
+                </p>
                
 
 
-
-                <div class="container">
-
- 
-  
-                    <div id="before-after-slider">
-                      <div id="before-image">
-                        <div id="before-image--position">
-                            <img src="./img/png/10.png" alt="before"/>
-                            <span>
-                                До
-                            </span>
-                        </div>
+                <div class="swiper service-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                            
                       </div>
-                    
-                      <div id="after-image">
-                        <div id="after-image--position">
-                            <img src="./img/png/Picture.png" alt="After"/>
-                            <span>
-                                После
-                            </span>
-                        </div>
+                      <div class="swiper-slide">
+
                       </div>
-                  
-                      <div id="resizer">
-                        <span>
-                            <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22.0104 0L43.8144 29.0104L21.8591 57.8695L0.0551889 28.8591L22.0104 0Z" fill="#F13A5F"/>
-                            </svg>
-                        </span>
+                      <div class="swiper-slide">
+
+                      </div>
+                      <!-- ... -->
                     </div>
-                    
-                   </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev service-slider-prev"></div>
+                    <div class="swiper-button-next service-slider-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                  </div>
             </section>
             <h3 class="section-service-option_h3">
                 Отзывы
@@ -826,7 +856,51 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
       <script>
+        const swiperContainer2 = document.querySelector('.service-slider');
+
+        document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+        slider1();
+        
+    },
+    true
+)
+
+
+        const slider1 = () => {
+            debugger
+  if (!swiperContainer2) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer2, {
+    // loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: '.service-slider-next',
+      prevEl: '.service-slider-prev',
+    },
+  
+    // If we need pagination
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
+    },
+  });
+}
+
+
+
         const slider = document.getElementById('before-after-slider');
 const before = document.getElementById('before-image');
 const beforeImage = before.getElementsByTagName('img')[0];
@@ -917,5 +991,6 @@ function pauseEvent(e){
     return false;
 }
       </script>
+      
 </body>
 </html>

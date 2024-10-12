@@ -1,17 +1,18 @@
 const swiperContainer = document.querySelector('.swiper-compony');
-const swiperContainer2 = document.querySelector('.slider__thumbs .swiper-container');
+const swiperContainer2 = document.querySelector('.service-slider');
 
 document.addEventListener(
     'DOMContentLoaded',
     () => {
-        slider();
+        slider2();
+        slider1();
         
     },
     true
 )
 
 
-const slider = () => {
+const slider2 = () => {
   if (!swiperContainer) {
       return ;
   };
@@ -36,7 +37,32 @@ const slider = () => {
   });
 }
 
+const slider1 = () => {
+  if (!swiperContainer2) {
+      return ;
+  };
 
+  const swiper = new Swiper(swiperContainer2, {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    slidesPerView: 2,
+
+    navigation: {
+      nextEl: '.service-slider-next',
+      prevEl: '.service-slider-prev',
+    },
+  
+    // If we need pagination
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
+    },
+  });
+}
 
 
 
