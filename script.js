@@ -5,7 +5,7 @@ document.addEventListener(
     'DOMContentLoaded',
     () => {
         slider();
-        slider1();
+        
     },
     true
 )
@@ -35,4 +35,8 @@ const slider = () => {
     },
   });
 }
+
+
+
+
 
