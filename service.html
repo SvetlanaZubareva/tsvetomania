@@ -7,7 +7,6 @@
     <title>Карта лояльности</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
 <body>
     <main class="main-delivery">
@@ -207,7 +206,7 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                            
+                           
                       </div>
                       <div class="swiper-slide">
 
@@ -285,19 +284,19 @@
                 Как мы работаем?
             </h3>
             <ul class="section-service-work_list">
-                <li class="section-service-work_list-item">
+                <li class="section-service-work_list-item section-service-work_list-item-one">
                     Консультация и обсуждение идей
                 </li>
-                <li class="section-service-work_list-item">
+                <li class="section-service-work_list-item section-service-work_list-item-two">
                     Подбор растений и разработка дизайна
                 </li>
-                <li class="section-service-work_list-item">
+                <li class="section-service-work_list-item section-service-work_list-item-three">
                     Реализация проекта
                 </li>
-                <li class="section-service-work_list-item">
+                <li class="section-service-work_list-item section-service-work_list-item-four">
                     Обслуживание и поддержка
                 </li>
-                <li class="section-service-work_list-item">
+                <li class="section-service-work_list-item section-service-work_list-item-five">
 
                 </li>
             </ul>
@@ -859,39 +858,93 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
       <script>
+        // при наведении менять картинку
+        const buttonColor = document.querySelector('.section-service-work_list-item-one');
+        const buttonColorTwo = document.querySelector('.section-service-work_list-item-two');
+        const buttonColorThree = document.querySelector('.section-service-work_list-item-three');
+        const buttonColorFour = document.querySelector('.section-service-work_list-item-four');
+        const buttonColorImg = document.querySelector('.section-service-work_list-item-five');
+        
+        buttonColor.addEventListener('mouseover', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/nav.png')";
+        }
+        );
+        buttonColorTwo.addEventListener('mouseover', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/nav2.png')";
+        }
+        );
+        buttonColorThree.addEventListener('mouseover', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/nav3.png')";
+        }
+        );
+        buttonColorFour.addEventListener('mouseover', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/nav4.png')";
+        }
+        );
+
+        buttonColor.addEventListener('mouseout', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/Frame 2085661143.png')";
+        })
+        buttonColorTwo.addEventListener('mouseout', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/Frame 2085661143.png')";
+        })
+        buttonColorThree.addEventListener('mouseout', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/Frame 2085661143.png')";
+        })
+        buttonColorFour.addEventListener('mouseout', () => {
+            buttonColorImg.style.backgroundImage = "url('./img/png/Frame 2085661143.png')";
+        })
+
+        // при наведении менять текст кнопки
+        const buttonText = document.querySelectorAll('.section-service-work_list-link');
+
+        buttonText.forEach(buttonText => {
+            buttonText.addEventListener('mouseover', function() {
+            buttonText.textContent='рассчитать';
+    });
+});
+
+        buttonText.forEach(buttonText => {
+            buttonText.addEventListener('mouseout', function() {
+            buttonText.textContent='индивидуальный расчет';
+    });
+});
+
+
+
         const swiperContainer2 = document.querySelector('.service-slider');
 
         document.addEventListener(
-    'DOMContentLoaded',
-    () => {
+            'DOMContentLoaded',
+            () => {
         slider1();
         
-    },
-    true
-)
+        },
+        true
+    )
 
 
         const slider1 = () => {
-            debugger
-  if (!swiperContainer2) {
-      return ;
-  };
+            
+            if (!swiperContainer2) {
+            return ;
+        };
 
-  const swiper = new Swiper(swiperContainer2, {
-    // loop: true,
-    autoplay: {
-        delay: 3000,
-    },
-    slidesPerView: 1,
+        const swiper = new Swiper(swiperContainer2, {
+        // loop: true,
+            autoplay: {
+            delay: 3000,
+        },
+            slidesPerView: 1,
 
-    navigation: {
-      nextEl: '.service-slider-next',
-      prevEl: '.service-slider-prev',
-    },
+            navigation: {
+                nextEl: '.service-slider-next',
+                prevEl: '.service-slider-prev',
+        },
   
-    // If we need pagination
-    breakpoints: {
-        0: {
+        // If we need pagination
+            breakpoints: {
+                0: {
             slidesPerView: 1,
             spaceBetween: 20,
         }
@@ -900,8 +953,8 @@
 }
 
 
-
-        const slider = document.getElementById('before-after-slider');
+// слайдер до после
+const slider = document.getElementById('before-after-slider');
 const before = document.getElementById('before-image');
 const beforeImage = before.getElementsByTagName('img')[0];
 const resizer = document.getElementById('resizer');

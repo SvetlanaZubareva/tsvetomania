@@ -1177,6 +1177,11 @@ p{
     line-height: 20px;
     font-weight: 300;
 }
+.section-product-card-description_list-item:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 .section-product-card-description_list-item_h3{
     font-size: 20px;
     font-weight: 550;
@@ -1469,6 +1474,10 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.section-service-work_list-item:hover{
+    background-color: #f13a5f;
+    color: #fff;
+}
 .section-service-work_list{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -1523,7 +1532,19 @@ p{
     font-family: 'Helvetica Neue Cyr Medium';
     display: flex;
     text-align: center;
-    color: #1e1e1e;
+}
+.section-service-work_list-link:hover{
+    background-color: #f13a5f;
+    color: #fff;
+    width: 207px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.section-service-work_list-link{
+
 }
 .section-service-work_link{
     background-color: #f9f9f9;
@@ -1640,6 +1661,10 @@ p{
     padding: 20px 45px 34px;
     box-sizing: border-box;
 }
+.section-service-help_list-item:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 4px 4px rgb(0, 0, 0, 0.1);
+}
 .section-service-help_list-item-h3{
     text-align: center;
     font-size: 32px;
@@ -1742,6 +1767,40 @@ p{
     text-align: center;
     width: 90%;
     margin: 0 auto
+}
+#swiper-wrapper-slide-product{
+    height: 450px;
+}
+#swiper-slide-product{
+    width: 90px;
+    height: 115px;
+}
+#swiper-button-next-product::after,
+#swiper-button-prev-product::after{
+    transform: rotate(270deg);
+}
+#swiper-button-prev-product,
+#swiper-button-next-product{
+    --swiper-theme-color: #f13a5f;
+    width: 90px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #ffe5eb;
+}
+.swiper-wrapper-product{
+    position: relative;
+    margin-top: 80px;
+}
+#swiper-button-prev-product{
+    top: 500px;
+    left: 0;
+}
+#swiper-button-next-product{
+    top: -50px;
+    left: 0;
+}
+.swiper-wrapper-product1{
+    width: 526px;
 }
 
 
