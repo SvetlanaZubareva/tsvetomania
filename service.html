@@ -226,7 +226,7 @@
                                     </div>
                                     </div>
                                 
-                                    <div id="resizer">
+                                    <div class="resizer" id="resizer">
                                     <span>
                                         <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M22.0104 0L43.8144 29.0104L21.8591 57.8695L0.0551889 28.8591L22.0104 0Z" fill="#F13A5F"/>
@@ -269,7 +269,7 @@
                                         </div>
                                         </div>
                                     
-                                        <div id="resizer">
+                                        <div class="resizer" id="resizer">
                                         <span>
                                             <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M22.0104 0L43.8144 29.0104L21.8591 57.8695L0.0551889 28.8591L22.0104 0Z" fill="#F13A5F"/>
@@ -312,7 +312,7 @@
                                         </div>
                                         </div>
                                     
-                                        <div id="resizer">
+                                        <div class="resizer" id="resizer">
                                         <span>
                                             <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M22.0104 0L43.8144 29.0104L21.8591 57.8695L0.0551889 28.8591L22.0104 0Z" fill="#F13A5F"/>
@@ -1050,6 +1050,8 @@
         const swiper = new Swiper(swiperContainer2, {
         
             slidesPerView: 1,
+            onlyExternal: true,
+            allowTouchMove: false,
 
             navigation: {
                 nextEl: '.service-slider-next',
@@ -1089,6 +1091,14 @@ window.addEventListener('resize', function() {
   beforeImage.style.width = width + 'px';
 })
 
+// resizer.forEach(resizer => {
+//     resizer.addEventListener('mousedown',function(){
+//     active = true;
+//     resizer.classList.add('resize');
+
+// });
+// })
+
 resizer.addEventListener('mousedown',function(){
   active = true;
  resizer.classList.add('resize');
@@ -1113,6 +1123,13 @@ document.body.addEventListener('mousemove',function(e){
   pauseEvent(e);
 });
 
+
+// resizer.forEach(resizer => {
+//     resizer.addEventListener('touchstart',function(){
+//   active = true;
+//   resizer.classList.add('resize');
+// });
+// })
 resizer.addEventListener('touchstart',function(){
   active = true;
   resizer.classList.add('resize');

@@ -8,7 +8,7 @@ document.addEventListener(
     () => {
         slider2();
         slider1();
-        // slider3();
+        slider3();
         slider4()
         
     },

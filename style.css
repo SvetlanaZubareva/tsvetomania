@@ -8,6 +8,7 @@ a{
 }
 p{
     margin: 0;
+    
 }
 .main-delivery{
     font-family: 'Helvetica Neue Cyr Medium';
@@ -376,10 +377,6 @@ p{
     text-align: center;
     margin-bottom: 36px;
 }
-/* .section-guarantees-description_list-item:hover{
-    background-color: #f13a5f;
-    color: #fff;
-} */
 .section-company_h1{
     font-size: 96px;
     font-weight: 550;
@@ -1473,6 +1470,7 @@ p{
     background-image: url('./img/png/Frame\ 2085661143.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .section-service-work_list-item:hover{
     background-color: #f13a5f;
@@ -1970,16 +1968,6 @@ img {
     border-radius: 15px;
 }
 
-  /* #resizer span:before,
-   #resizer span:after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      border: 10px solid transparent;
-      border-bottom-width: 0px;
-      border-right-width: 0px;
-      transform: translate(-50%, -50%) rotate(45deg);
-    } */
   #resizer span:after {
       left: 60%;
       border-top-color: #fff;
@@ -1988,12 +1976,18 @@ img {
       left: 40%;
       border-left-color: #fff;
     }
-/* @media (max-width:767px) {
-  .container {
-    width:100%;
-    padding:0 20px
-  } */
-}
+    .section-guarantees-description_list-item:hover{
+        background-color: #f13a5f;
+        color: #fff !important;
+    }
+    .section-guarantees-description_list-item:hover h3{
+        color: #fff !important;
+    }
+    .section-guarantees-description_list-item:hover p{
+        color: #fff !important;
+    }
+    
+
 
 
 
