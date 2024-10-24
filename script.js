@@ -2,6 +2,7 @@ const swiperContainer = document.querySelector('.swiper-compony');
 const swiperContainer2 = document.querySelector('.service-slider');
 const swiperContainer3 = document.querySelector('.swiper-product');
 const swiperContainer4 = document.querySelector('.swiper-product1');
+const swiperContainer5 = document.querySelector('.swiper-advantagrs-conpany');
 
 document.addEventListener(
     'DOMContentLoaded',
@@ -9,8 +10,8 @@ document.addEventListener(
         slider2();
         slider1();
         slider3();
-        slider4()
-        
+        slider4();
+        slider5();
     },
     true
 )
@@ -69,10 +70,10 @@ const slider1 = () => {
 }
 
 
-// const slider3 = () => {
-//   if (!swiperContainer3) {
-//       return ;
-//   };
+const slider3 = () => {
+  if (!swiperContainer3) {
+      return ;
+  };
 
   const swiperOne = new Swiper(swiperContainer3, {
     direction: 'vertical',
@@ -95,7 +96,7 @@ const slider1 = () => {
         }
     },
   });
-// }
+}
 
 const slider4 = () => {
   if (!swiperContainer4) {
@@ -115,6 +116,39 @@ const slider4 = () => {
             slidesPerView: 1,
             spaceBetween: 20,
         }
+    },
+  });
+}
+
+
+// новый слайдер для страницы о компании для мобилки
+
+
+const slider5 = () => {
+  if (!swiperContainer5) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer5, {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    slidesPerView: 2,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination-advantages-company',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 20,
+      }
     },
   });
 }

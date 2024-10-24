@@ -1829,17 +1829,9 @@ p{
 #service-slider-next{
     right: -100px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.section-compony-advantage_list{
+    display: block;
+}
 
 
 
@@ -1986,6 +1978,430 @@ img {
     .section-guarantees-description_list-item:hover p{
         color: #fff !important;
     }
+
+
+
+
+
+
+
+
+
+
+
+/* стили для мобильной версии "О компании" */
+.section-compony-advantage_list{
+    display: block;
+}
+.swiper-advantagrs-conpany{
+    display: none;
+}
+@media(min-width: 1200px) {
+    .section-compony-advantage_list{
+        display: block;
+    }
+    .swiper-advantagrs-conpany{
+        display: none;
+    }
+}
+
+@media(min-width: 0) and (max-width: 767px) {
+    .section-company {
+        display: flex;
+        flex-direction: column;
+        margin-top: 37px;
+        gap: 45px;
+    }
+    #swiper-compony{
+        order: -1;
+    }
+    .main-delivery{
+        width: 95%;
+    }
+    .swiper-slide{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .swiper-pagination-company{
+        width: 15px;
+        height: 15px;
+    }
+    .section-company_h1{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .section-company_p{
+        text-align: center;
+        margin-bottom: 59px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .section-company-description{
+        padding-top: 0;
+    }
+    .section-company-description_div {
+        margin-left: 0;
+    }
+    .section-company-description_h2{
+        font-size: 56px;
+        line-height: 55px;
+        font-weight: 550;
+    }
+    .section-company-description_div--right{
+        margin-right: 0;
+        width: 327px;
+    }
+    .section-company-description_div-p--left{
+        margin-bottom: 30px;
+    }
+    .section-company-description{
+        background-image: url(./img/mobil/fl-mobil.png);
+        background-repeat: no-repeat;
+        background-position: 10% 10%;
+    }
+    .section-company-description{
+        padding-bottom: 0;
+    }
+    .section-compony-shop{
+        margin-top: 60px;
+    }
+    .section-company-description_div-p--right{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .section-compony-shop_h3{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .section-compony-shop_list{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .section-compony-shop_list-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 15px 30px;
+    }
+    .section-compony-shop_list-item-p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-compony-offer-h3{
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 550;
+        width: 100%;
+    }
+    .section-compony-offer_list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-compony-offer_list-item h3 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 550;
+    }
+    .section-compony-advantage_h2{
+        font-size: 48px;
+        line-height: 48px;
+        width: 100%;
+    }
+    .section-compony-advantage_list-item-list-item:nth-child(1){
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 550;
+    }
+    .section-compony-advantage_list-item-list-item p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main-section-compony_paragraph {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .main-section-compony_paragraph--big{
+        width: 100%;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .section-compony-advantage_list{
+        display: none;
+    }
+    .swiper-advantagrs-conpany{
+        display: block;
+    }
+    #swiper-pagination-advantages-company{
+        width: 15px;
+        height: 15px;
+        --swiper-theme-color:#f13a5f;
+    }
+}
+
+/* стили планшет */
+@media(min-width: 768px) and (max-width: 991px) {
+    .main-delivery{
+        width: 95%;
+    }
+    .section-company {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        gap: 30px;
+    }
+    .swiper-compony{
+        order: -1;
+    }
+    .section-company_h1{
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 550;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-company_p{
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 60px
+    }
+    .section-company-description{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .section-company-description_div{
+        margin-left: 0;
+    }
+    .section-company-description_h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .section-company-description_div--right {
+        margin-right: 0;
+        width: 581px;
+    }
+    .section-company-description_div-p--left {
+        margin-bottom: 20px;
+    }
+    .section-company-description{
+        margin-bottom: 60px;
+    }
+    .section-compony-shop_h3{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .section-compony-shop_list-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-compony-shop_list-item-p {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .section-compony-shop_list-item:nth-child(1) p{
+        margin-bottom: 60px;
+    }
+    .section-compony-offer-h3{
+        font-size: 36px;
+        line-height: 36px;
+        width: 100%;
+    }
+    .section-compony-offer_list-item{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .section-compony-offer_list{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-compony-advantage_h2{
+        font-size: 48px;
+        line-height: 48px;
+        width: 100%;
+        text-align: center;
+    }
+    .swiper-advantagrs-conpany{
+        display: block;
+    }
+    .section-compony-advantage_list{
+        display: none;
+    }
+    .section-compony-advantage_list-item-list-item:nth-child(1){
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .section-compony-advantage_list-item-list-item p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-compony-advantage_list-item{
+        padding: 20px;
+    }
+    .main-section-compony_paragraph{
+        font-size: 16px;
+        line-height: 16px;
+        width: 100%;
+    }
+    .main-section-compony_paragraph--big{
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media(min-width: 991px) and (max-width: 1200px) {
+    .section-company {
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: 35% 63%;
+        gap: 21px;
+    }
+    .section-company_h1{
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .section-company_p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .swiper-slide{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .main-delivery{
+        width: 90%;
+    }
+    #swiper-slide-company1,
+    #swiper-slide-company2,
+    #swiper-slide-company3{
+        height: 304px;
+    }
+    .section-company-description_div{
+        margin-left: 0
+    }
+    .section-company-description_div-p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-company-description_h2{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .section-company-description_div--right {
+        margin-right: 0;
+        width: 650px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-company-description_div-p--left{
+        margin-bottom: 20px;
+    }
+    .section-compony-shop_h3{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .section-compony-shop_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-compony-shop_list-item-p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-compony-shop_list-item:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .section-compony-offer_list-item{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .section-compony-offer_list{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .section-compony-advantage_h2{
+        font-size: 64px;
+        line-height: 64px;
+        text-align: center;
+        width: 700px;
+    }
+    .section-compony-advantage_list-item-list-item:nth-child(1){
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .section-compony-advantage_list-item-list-item p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-compony-advantage_list{
+        display: none;
+    }
+    .main-section-compony_paragraph{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main-section-compony_link{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main-section-compony_link-span{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main-section-compony_paragraph--big{
+        font-size: 64px;
+        line-height: 63px;
+        width: 100%;
+    }
+}
+@media(min-width: 1200px) and (max-width: 1919px) {
+    .main-section-compony_paragraph--big{
+        width: 1100px;
+    }
+    .section-company_h1 {
+        font-size: 70px;;
+    }
+}
+@media(min-width: 1200px) {
+    .section-compony-advantage_list{
+        display: grid;
+    }
+    #swiper-advantagrs-conpany{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     
 
 
